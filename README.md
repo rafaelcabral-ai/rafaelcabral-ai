@@ -6,7 +6,7 @@
 
 ### AI Research Engineer & Ph.D. Statistician
 
-I specialize in **AI robustness**, **LLM optimization (SFT/RL)**, and **probabilistic modeling**. Currently, I am a Senior AI Research Engineer at Huawei International, at their Norbert Wiener Research Center in Singapore. I do AI research and develop and deploy AI pipelines for their on-device assistant serving over 900 million users.
+I specialize in **AI robustness**, **LLM optimization (SFT/RL)**, and **probabilistic modeling**. Currently, I am a Senior AI Research Engineer at Huawei International, at their Norbert Wiener Research Center in Singapore. I do AI research (patents / papers) and engineer and deploy AI pipelines for their on-device assistant serving over 900 million users.
 
 > 
 > **Note on Contributions:** Since moving out of academia, most of my work is in closed-source proprietary repositories. Below are my featured public research projects and open-source contributions.
@@ -15,30 +15,36 @@ I specialize in **AI robustness**, **LLM optimization (SFT/RL)**, and **probabil
 
 ---
 
-## 🚀 Featured Projects
 
-### [ProofFlow](https://github.com/Huawei-AI4Math/ProofFlow) | *AI4Math: Neuro-symbolic Math Reasoning*
+### [ProofFlow](https://github.com/Huawei-AI4Math/ProofFlow) | *Neuro-symbolic Math Reasoning*
 
-* **Role:** Main contributor (80%+ of code).
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Huawei-AI4Math/ProofFlow/refs/heads/main/data/images/pipeline_ProofFlow.png" width="50%" alt="ProofFlow Pipeline">
+  <br>
+  <small>Our proof autoformalization pipeline with three parts: (1) Graph builder; (2) Lemma Formalizer; and (3) Tactic Completer. Lean errors are verified by the Lean 4 compiler.</small>
+</p>
 
-* **Impact:** Developed a dependency graph approach to formalize natural language math proofs/calculations into the Lean formal language. State of the art performance in automatic verification of mathematical proofs. Used to generate high quality synthetic proofs (to train LLMs).
+* **Role:** Main contributor (idea and 80%+ of code).
+  
+* **The Problem:** LLMs struggle with rigorous mathematical proof verification.
 
+* **Impact:** Developed a dependency graph approach to formalize natural language math proofs/calculations into the Lean formal language. State of the art performance in automatic verification of mathematical proofs. Used to generate 100k+ high quality synthetic proofs (to train foundation LLMs).
 
-* **[GitHub](https://github.com/Huawei-AI4Math/ProofFlow)** | **[Paper](https://openreview.net/forum?id=s9t2FJVsBH)** (ICLR 8664; pending final decision) 
+* **[Project GitHub](https://github.com/Huawei-AI4Math/ProofFlow)** | **[Paper](https://openreview.net/forum?id=s9t2FJVsBH)** (ICLR score 8664; pending final decision) 
 
-### [Google Tunix Hackathon](https://www.kaggle.com/competitions/google-tunix-hackathon) | *Teaching Gemma3-1B to Think*
+### [Teaching Gemma3 to Think](https://www.kaggle.com/competitions/google-tunix-hackathon) | *Google Tunix Hackathon*
 
 * **Focus:** Kaggle hackaton to finetune Gemma3-1B on Google v5e-8 TPUs with their new JAX-native Tunix library.
 
-* **Novelty:** Optimized a novel training pipeline where, following the initial reasoning, the model enters a self-verification phase to rate its own output. Trained on math, coding and writing tasks. Data generation, reward function, and TPU optimization details on writeup and notebook below. 
+* **Novelty:** Optimized a novel training pipeline where, following the initial reasoning, the model enters a self-verification phase to rate its own output. Trained on math, coding and writing tasks. Data generation, reward function, and TPU optimization details on writeup and notebook below.
 
-* [**Writeup**](https://www.kaggle.com/competitions/google-tunix-hackathon/writeups/new-writeup-1765977529751)  | [**Notebook**](https://www.kaggle.com/code/rafaelcabral96/gemma-1b-forge-evolve)  
+* **[Read the Writeup](https://www.kaggle.com/competitions/google-tunix-hackathon/writeups/new-writeup-1765977529751)** | **[View Notebook](https://www.kaggle.com/code/rafaelcabral96/gemma-1b-forge-evolve)**
 
 * **Status:** Pending judges' results.
 
 ---
 
-## 🎓 PhD Projects Archive 
+## PhD Projects Archive 
 
 For a full history of my past Gitbub project, visit my previous Github account: [rafaelcabral96](https://github.com/rafaelcabral96).
 
@@ -52,7 +58,7 @@ For a full history of my past Gitbub project, visit my previous Github account: 
 
 ### [nigstan](https://rafaelcabral96.github.io/nigstan/) | *Spatio-temporal Modeling*
 
-* Advanced spatio-temporal modeling implemented in Stan for robust statistical inference.
+* Advanced spatio-temporal modeling implemented in Stan for robust Bayesian inference and predictions.
 
 * [BA paper](https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Controlling-the-Flexibility-of-Non-Gaussian-Processes-Through-Shrinkage-Priors/10.1214/22-BA1342.full)
 
