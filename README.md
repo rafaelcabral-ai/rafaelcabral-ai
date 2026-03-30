@@ -24,13 +24,15 @@ I specialize in **AI robustness**, **LLM optimization (SFT/RL)**, and **probabil
   <small>Our proof autoformalization pipeline with three parts: (1) Graph builder; (2) Lemma Formalizer; and (3) Tactic Completer. Lean errors are verified by the Lean 4 compiler.</small>
 </p>
 
+* **[Project GitHub](https://github.com/Huawei-AI4Math/ProofFlow)** | **[Paper](https://openreview.net/forum?id=s9t2FJVsBH)** | **[Poster + Video](https://iclr.cc/virtual/2026/poster/10007085)** — ✅ Accepted at ICLR 2026! Presenting in Rio, Apr 21–28 — chat to meet!
+
 * **Role:** Main contributor (idea and 80%+ of code).
-  
-* **The Problem:** LLMs struggle with rigorous mathematical proof verification.
 
-* **Impact:** Developed a dependency graph approach to formalize natural language math proofs/calculations into the Lean formal language. State of the art performance in automatic verification of mathematical proofs. Used to generate 100k+ high quality synthetic proofs (to train foundation LLMs).
+* **Goal:** Automate the translation of complex human mathematics (theorem + proof) into machine-verifiable Lean 4 code. This enables: (1) automatic verification of math proofs, (2) generation of curated SFT data to train foundation models, and (3) generation of contrastive pairs to train math formalizers and solvers.
 
-* **[Project GitHub](https://github.com/Huawei-AI4Math/ProofFlow)** | **[Paper](https://openreview.net/forum?id=s9t2FJVsBH)** (ICLR score 8664; pending final decision) 
+* **Our Approach:** A dependency-graph pipeline that enforces structural fidelity (the DAG mirrors the original proof's step dependencies), syntactic correctness (Lean 4 compiles), and semantic faithfulness (formal statements match the NL source). We introduce **ProofScore**, a metric that jointly measures all three.
+
+* **Results:** 2x the ProofScore of full-proof baselines on miniF2F, with DAG enforcement alone contributing +23%. Used to generate 100k+ high-quality synthetic proofs for LLM training.
 
 ### [Teaching Gemma3 to Think](https://www.kaggle.com/competitions/google-tunix-hackathon) | *Google Tunix Hackathon*
 
